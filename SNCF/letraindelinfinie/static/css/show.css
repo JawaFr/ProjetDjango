@@ -1,0 +1,35 @@
+main{
+    width: 100%;
+}
+#main-container{
+    max-width: 56.25em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#plan{
+    width: 60%;
+    margin: 2em auto;
+}
+#main-container h1{
+    margin: 1em auto;
+    color: #ff4637;
+    font-size: 1.5em;
+}
+#plan-container{
+    width: 100%;
+    display: flex;
+}
+#left, #right, #plan-container a{
+    margin: auto 0;
+    width: 5em;
+    height: 5em;
+}
+#left:hover,#right:hover{
+    cursor: pointer;
+}
+
+#left{
+    transform: rotate(180deg);
+}

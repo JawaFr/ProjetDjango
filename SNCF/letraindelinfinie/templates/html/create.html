@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div id="container">
+            <div id="egg-container">
+                <img src="{% static 'img/ds.avif'%}" alt="">
+                <img id="egg" src="{% static 'img/Inosuke-PNG.png'%}" alt="">
+            </div>
+            <nav>
+                <a href="/letraindelinfinie/index">Accueil</a>
+                <a href="/letraindelinfinie/random">Aléatoire</a>
+                <a href="/letraindelinfinie/create">Nouveau</a>
+            </nav>
+            <form method="post" action="{% url 'search_redirect' %}">
+                {% csrf_token %}
+                <input type="text" name="search_id"  placeholder="Recherche par ID">
+                <button type="submit1"></button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div id="form-container">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" name="" id="submit" value="Ajouter">
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

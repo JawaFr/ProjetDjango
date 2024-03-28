@@ -1,0 +1,30 @@
+main{
+    width: 100%;
+}
+#form-container{
+    color: white;
+    max-width: 56.25em;
+    margin: 5em auto;
+}
+main form{
+    margin: auto;
+    background-color: #cc3743;
+    width: 60%;
+    padding: 2em 0;
+    border-radius: 30px;
+}
+form p{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+form label, form input{
+    margin: 0.5em 1em;
+}
+#submit{
+    width: 20%;
+    margin: 0.5em auto;
+    display: flex;
+    justify-content: center;
+}

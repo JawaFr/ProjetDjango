@@ -1,0 +1,51 @@
+main{
+    width: 100%;
+    margin: auto;
+}
+#train-container{
+    max-width: 56.25em;
+    margin: 5em auto;
+    /* border: solid black; */
+}
+.train, .train1{
+    color: #cc3743;
+    font-size: 1em;
+    display: flex;
+    border-radius: 20px;
+}
+.train h2, .train1 h2{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 0.2em 0.3em;
+}
+.train{
+    color: white;
+    background-color: #cc3743;
+    padding: 1.2em 0.5em;
+}
+.train1{
+    color: white;
+    background-color: #800015;
+    padding: 1.2em 0.5em;
+}
+#next{
+    color: white;
+    width: 2em;
+}
+#next:hover{
+    cursor: pointer;
+}
+/* box-shadow: 2px 2px 5px grey;
+transition: 0.5s; */
+
+#id{
+    font-size: 0.9em;
+    margin-left: 0.2em;
+}
+#train-info{
+    width: 5em;
+    margin-right: 35em;
+    display: flex;
+    flex-direction: column;
+}

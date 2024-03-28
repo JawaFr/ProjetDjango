@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}">
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <div id="egg-container">
+                <img src="{% static 'img/ds.avif'%}" alt="">
+                <img id="egg" src="{% static 'img/Inosuke-PNG.png'%}" alt="">
+            </div>
+            <nav>
+                <a href="/letraindelinfinie/index">Accueil</a>
+                <a href="/letraindelinfinie/random">Aléatoire</a>
+                <a href="/letraindelinfinie/create">Nouveau</a>
+            </nav>
+            <form method="post" action="{% url 'search_redirect' %}">
+                {% csrf_token %}
+                <input type="text" name="search_id"  placeholder="Recherche par ID">
+                <button type="submit"></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div id="train-container">
+            <div id="train">
+                {% for trainActuel in listeTrains %}
+                    <div class="train">
+                        <h2 id="hour">{{ trainActuel.hour }}</h2>
+                        <div id="train-info">
+                            <h2 id="city">{{ trainActuel.city }}</h2>
+                            <h2 id="id">Train ID N°{{ trainActuel.trainID }}</h2>
+                        </div>
+                        <a href="/letraindelinfinie/show/{{ trainActuel.trainID }}"><img id="next" src="{% static 'img/icons8-flèche-100.png'%}" alt=""></a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

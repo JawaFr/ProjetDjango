@@ -1,0 +1,52 @@
+:root{
+    background-color: #C1CDAD;
+}
+header{
+    width: 100%;
+    background-color: #d1b857;
+}
+#container{
+    padding: 0 1em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#container nav{
+    margin: auto;
+}
+#container nav a{
+    font-size: 1.5em;
+    margin: 0 1em ;
+    text-decoration: none;
+    color: white;
+}
+#container nav a:hover{
+    color: #c1cdad;
+}
+#container nav a:active{
+    color: #cc3743;
+}
+header img{
+    width: 7em;
+}
+header input{
+    width: 10em;
+    height: 2em;
+    margin: auto 0;
+}
+
+#egg:hover {
+    display: initial;
+}
+
+#egg{
+    transform: rotate(180deg);
+}
+#egg-container img:last-child {
+    display:none;
+}
+#egg-container:hover img:last-child {
+    display:block;
+    position: absolute;
+    margin-top: -0.65em;
+}
