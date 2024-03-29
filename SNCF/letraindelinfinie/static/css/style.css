@@ -50,3 +50,12 @@ header input{
     position: absolute;
     margin-top: -0.65em;
 }
+
+form{
+    margin: auto;
+}
+form button{
+    margin: auto;
+    width: 1em;
+    height: 2em;
+}
